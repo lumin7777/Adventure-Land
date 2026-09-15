@@ -1,0 +1,350 @@
+/* =========================
+   Base
+========================= */
+
+:root {
+    --cream: #f7f4ec;
+    --cream-dark: #eee9dc;
+
+    --sage: #a7b39a;
+    --sage-dark: #75836b;
+
+    --brown: #6f6254;
+    --terracotta: #b9826a;
+
+    --text: #34352f;
+    --white: #ffffff;
+
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+.site-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.navbar {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 90px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin: 12px 0 25px;
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: var(--sage-dark);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.hero-image {
+    min-height: 500px;
+    background: var(--sage);
+    border-radius: 30px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.primary {
+    background: var(--sage-dark);
+    color: var(--white);
+}
+
+.secondary {
+    border: 1px solid var(--sage-dark);
+    color: var(--sage-dark);
+}
+
+
+/* =========================
+   Quick Information
+========================= */
+
+.quick-info {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 30px 80px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.info-card h3 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   General Sections
+========================= */
+
+.section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+    margin: 12px 0 20px;
+}
+
+.section-content {
+    max-width: 600px;
+}
+
+
+/* =========================
+   About
+========================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.section-image {
+    min-height: 450px;
+    background: var(--cream-dark);
+    border-radius: 30px;
+}
+
+
+/* =========================
+   Programs
+========================= */
+
+.section-heading {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.program-card {
+    background: var(--white);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.program-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Approach
+========================= */
+
+.approach {
+    background: var(--sage);
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Gallery
+========================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-image {
+    aspect-ratio: 1 / 1;
+    background: var(--cream-dark);
+    border-radius: 18px;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    text-align: center;
+    padding: 35px;
+    border-top: 1px solid var(--cream-dark);
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero,
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-image {
+        min-height: 350px;
+    }
+
+    .quick-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
